@@ -5,7 +5,6 @@
 
 #Clear 
 rm(list=ls())
-
 #install.packages("ggcorrplot")
 
 ## Load libraries
@@ -539,6 +538,7 @@ plot(train3$Revenue, main = "RUS")
 
 #------------------------------------------
 # Create Naive Model
+#------------------------------------------
 nb_mod3 <- naiveBayes(x = train3[ ,vars2],
                       y = train3$Revenue,
                       laplace = 1)
@@ -556,6 +556,7 @@ head(nb3.train)
 
 #------------------------------------------
 # ConfusionMatrix
+#------------------------------------------
 train_conf3 <- confusionMatrix(data = nb3.train, # predictions
                                reference = train3$Revenue, # actual
                                positive = "TRUE",
@@ -571,6 +572,7 @@ nb3.test <- predict(object = nb_mod3, # NB model
 
 #------------------------------------------
 # ConfusionMatrix() 
+#------------------------------------------
 test_conf3 <- confusionMatrix(data = nb3.test, # test predictions
                               reference = test2$Revenue, # actual
                               positive = "TRUE",
@@ -591,4 +593,3 @@ cbind(Training3 = train_conf3$byClass,
 # The model overfit on the data, as indicated by a low Kappa.
 # Therefore Analysis 3 will not be considered.
 
-save.image(file = "Final_Group2_Part1.RData")
