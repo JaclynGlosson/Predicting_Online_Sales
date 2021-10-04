@@ -1,2 +1,4 @@
 # Predicting_Online_Sales
-End of term project from Data Mining (STAT 642) using R Studio
+
+For my final project in STAT 642 (Data Mining), I utlized webtraffic data to predict customer purchasing behavior. These predictions would be used to tailor online advertising to returning customers.
+
