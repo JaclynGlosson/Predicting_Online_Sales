@@ -56,10 +56,13 @@ There were no missing values in the data set, and 125 duplicate observations wer
 
 ## Exploratory Data Analysis
 
+### Corrleations
+High correlations are observed between a webpage visit and visit duration. The number of Product Related web page visits is strongly associated with duration spent on Product Related web pages. Indeed, all webpage visits and durations are positively correlated with one another, such that visiting and spending time on one type of webpage is associated with visiting and spending time on another type of webpage. Bounce Rates and Exit Rates are strongly associated with each other as well.
 
+### Class Imbalance 
+A class imbalance is observed in our variable of interest, Revenue. The majority (84.4%) of all observed website visits did not result in a purchase, while 15.6% of website visits did result in a purchase. This imbalance will be considered in final analysis.
 
-
-
-
+### Variation Over Time
+Purchases were time variant. The number of website visitors who made a purchase sharply increased in March, May, November, and December. These months also saw the greatest amount of website foot traffic.
 
 
