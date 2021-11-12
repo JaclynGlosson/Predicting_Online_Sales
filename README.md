@@ -6,11 +6,11 @@ The objective if this project was to use webtraffic data to predict customer pur
 
 * Final_STAT642_Part1.R includes the overall initial data exploration and two Naive Bayes models. The first Naive Bayes removes redundant variables while the second transforms them. 
 * Final_STAT642_Part2.R includes two Decision Tree models. The first does not address class imbalance, while the second applies case weighting. 
-* The PDF file details an excutive report tailored for a business audience. 
+* The PDF file details an excutive report tailored for a business audience, of which this readme is based upon.
 
 ## The Data
 
-The data consisted of 18 variables with over 12,000 observations.
+The data consisted of 18 variables with over 12,000 observations. The dataset includes historical website data for an entire calendar year, excluding the months of January and April. **Revene is the variable of interest for prediction,** and is a binary variable describing if a website visit resulted in a purhcase or not. Other variables are described below.
 
 **Numerical Variables**
 | Variable  | Description |
@@ -36,3 +36,30 @@ The data consisted of 18 variables with over 12,000 observations.
 | TrafficType | type of web traffic to the website  |
 | VisitorType | indicates whether the visitor is a new or returning visitor  |
 | Weekend	 | indicates if the visit occurs on a weekend   |
+
+## Data Quality
+
+There were no missing values in the data set, and 125 duplicate observations were identified and removed. The majority of numeric variables have a large prevalence of meaningful zero values. For instance; a zero in Administrative, Informational, and Product Related indicate the website visitor did not visit those respective sites. When this occurs, the time spent on the website page (Administrative Duration, Informational Duration, ProductRelated Duration) will likewise be zero. Due to the prevalences of zeros in the data, nearly all numeric distributions are right tailed. In general, there is wide variation across all numeric variables, in part due to the prevalence of zero values in each variable. All numeric variables contain a large number of outliers, as indicated by an observation with a  Z-score greater than 3). Therefore, the dataset as a whole contains large amounts of noise.
+
+| Variable  | Percent "0" value | Number of Outliers |
+| ------------- | ------------- | ------------- |
+| Administrative | 46.2%  | 213 |
+| Administrative Duration | 47.3% | 230 |
+| Informational | 78.4% | 260 |
+| Informational Duration | 80.3% | 229 |
+| BounceRates | 45.2% | 593 |
+| ProductRelated | 0.3% | 236 |
+| ProductRelated Duration | 5.2% | 217 |
+| Exit Rates | 0.6% | 599 |
+| PageValue | 77.6% | 257 |
+| SpecialDay | 90% | 478 |
+
+## Exploratory Data Analysis
+
+
+
+
+
+
+
+
