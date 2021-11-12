@@ -2,6 +2,12 @@
 
 The objective if this project was to use webtraffic data to predict customer purchasing beahvior for a hypothetical online retailer. The company will tailor their advertising based on these predictions, and advertising will be targeted to those customers who have already visited the company website. When the model results in an inaccurate revenue prediction, the company needlessly spends advertising revenue. This project utilizes both Decision Tree and Naive Bayes methods for prediction. The final recommended Decision Tree model, which corrected for class imbalance, correctly predicted who would purchase from the company in 80% of cases, and was able to predict who would not purchase from the company in 86% of cases.
 
+[The Data](link)
+
+[Data Quality](link)
+
+
+
 ## Navigating My Files
 
 * Final_STAT642_Part1.R includes the overall initial data exploration and two Naive Bayes models. The first Naive Bayes removes redundant variables while the second transforms them. 
@@ -113,5 +119,5 @@ The model resulted in a balanced goodness of fit between training and testing pe
 
 ![Naive Bayes Output](https://github.com/JaclynGlosson/Predicting_Online_Sales/blob/1a9e360956d0b15d62fb9368379e1485c50ef780/readme_images/image2.png)
 
-## DISCUSSION AND CONCLUSION
+## Discussion and Conclusion
 In all models run, the decision tree outperformed the Naive Bayes and is therefore recommended for use. The decision tree model will be able to correctly predict who will purchase from the company at an approximate rate of 84%, and who will not purchase from the company at an approximate rate of 88%. The business will be able to use these predictions to target their marketing audience more accurately, and in doing so will avoid spending marketing resources on those unlikely to purchase. The analysis revealed the most important variables for the business to continue collecting data on, the most vital of which was the PageValue variable. The business should prioritize collecting this type of data, as well as the other variables of ExitRates, ProductRelated_Duration, BounceRates, and ProductRelated. All other variables do not need to be collected, thus the company can save resources and time in avoiding unnecessary data collection. 
