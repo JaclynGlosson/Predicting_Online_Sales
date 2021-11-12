@@ -2,13 +2,16 @@
 
 The objective if this project was to use webtraffic data to predict customer purchasing beahvior for a hypothetical online retailer. The company will tailor their advertising based on these predictions, and advertising will be targeted to those customers who have already visited the company website. When the model results in an inaccurate revenue prediction, the company needlessly spends advertising revenue. This project utilizes both Decision Tree and Naive Bayes methods for prediction. The final recommended Decision Tree model, which corrected for class imbalance, correctly predicted who would purchase from the company in 80% of cases, and was able to predict who would not purchase from the company in 86% of cases.
 
-[The Data](link)
+### Readme Table of Contents
+* [The Data](https://github.com/JaclynGlosson/Predicting_Online_Sales/blob/main/README.md#the-data)
+* [Data Quality](https://github.com/JaclynGlosson/Predicting_Online_Sales/blob/main/README.md#data-quality)
+* [Exploratory Data Analysis](https://github.com/JaclynGlosson/Predicting_Online_Sales/blob/main/README.md#exploratory-data-analysis)
+* [Decision Tree Analysis](https://github.com/JaclynGlosson/Predicting_Online_Sales/blob/main/README.md#decision-tree-analysis)
+* [Naive Bayes Analysis](https://github.com/JaclynGlosson/Predicting_Online_Sales/blob/main/README.md#naive-bayes-analysis)
+* [Discussion and Conclusion](https://github.com/JaclynGlosson/Predicting_Online_Sales/blob/main/README.md#discussion-and-conclusion)
 
-[Data Quality](link)
 
-
-
-## Navigating My Files
+### Navigating My Files
 
 * Final_STAT642_Part1.R includes the overall initial data exploration and two Naive Bayes models. The first Naive Bayes removes redundant variables while the second transforms them. 
 * Final_STAT642_Part2.R includes two Decision Tree models. The first does not address class imbalance, while the second applies case weighting. 
