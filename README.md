@@ -39,7 +39,9 @@ The data consisted of 18 variables with over 12,000 observations. The dataset in
 
 ## Data Quality
 
-There were no missing values in the data set, and 125 duplicate observations were identified and removed. The majority of numeric variables have a large prevalence of meaningful zero values. For instance; a zero in Administrative, Informational, and Product Related indicate the website visitor did not visit those respective sites. When this occurs, the time spent on the website page (Administrative Duration, Informational Duration, ProductRelated Duration) will likewise be zero. Due to the prevalences of zeros in the data, nearly all numeric distributions are right tailed. In general, there is wide variation across all numeric variables, in part due to the prevalence of zero values in each variable. All numeric variables contain a large number of outliers, as indicated by an observation with a  Z-score greater than 3). Therefore, the dataset as a whole contains large amounts of noise.
+There were no missing values in the data set, and 125 duplicate observations were identified and removed. The majority of numeric variables have a large prevalence of meaningful zero values. For instance; a zero in Administrative, Informational, and Product Related indicate the website visitor did not visit those respective sites. When this occurs, the time spent on the website page (Administrative Duration, Informational Duration, ProductRelated Duration) will likewise be zero. Due to the prevalences of zeros in the data, nearly all numeric distributions are right tailed. In general, there is wide variation across all numeric variables, in part due to the prevalence of zero values in each variable. All numeric variables contain a large number of outliers, as indicated by an observation with a  Z-score greater than 3). Therefore, the dataset as a whole contains large amounts of noise and skew.
+
+![Image of distributions](https://github.com/JaclynGlosson/Predicting_Online_Sales/blob/150e7de0120d638488200fcb59eb1c94c9985e86/readme_images/image8.png)
 
 | Variable  | Percent "0" value | Number of Outliers |
 | ------------- | ------------- | ------------- |
@@ -53,6 +55,7 @@ There were no missing values in the data set, and 125 duplicate observations wer
 | Exit Rates | 0.6% | 599 |
 | PageValue | 77.6% | 257 |
 | SpecialDay | 90% | 478 |
+
 
 ## Exploratory Data Analysis
 
