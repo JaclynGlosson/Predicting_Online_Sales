@@ -89,3 +89,15 @@ Those who purchased visited, on average, more company web pages. The largest dif
 | PageValue | 27 | 2 |
 | SpecialDay | 0.02 | 0.070 |
 
+## Decision Tree Analysis
+The Decision Tree method was selected for analysis due to robustness against redundant features, noise, and irrelevant attributes- all of which are present in the current dataset. Within the current data set, high correlations between website visits and website duration variables suggest redundancy. Furthermore, outliers are prevalent throughout the dataset. The decision tree method was chosen due to the prevalence of redundancy and noise in the data set. Two models were run to compare model fit: the first model had no additional transformations, while the second model corrected for class imbalance. The second model outperformed the first and is described below.
+
+### Data Pre-Processing and Transformation
+As decision tree models do not require standardization, no normalization transformation was performed. Class imbalance was present in the “Revenue” variable and was corrected using case weighting in order to increase specificity. Eighty-five percent of data was used for model training with the remaining fifteen percent used for model testing and validation. Complexity Parameter (cp) was utilized for hyperparameter tuning. The cp value imposes a penalty to the tree for having too many splits, setting a minimum improvement value that an additional split must add to be included in the tree. In this analysis, the cp associated with the highest accuracy was found to be 0.005. A 10-fold cross validation was utilized. The most important variables identified for predicting Revenue were PageValues, ExitRates, ProductRelated_Duration, BounceRates, and ProductRelated, with PageValues being the primary variable utilized in the decision tree.
+
+### Validation and Performance Measures
+The model resulted in a balanced goodness of fit between training and testing performance. The trained model was able to accurately predict 1,362 customers would not generate revenue, and that 239 customers would generate revenue. The model inaccurately predicted that 182 customers would generate revenue, and that 47 customers would not generate revenue. The model resulted in an accuracy of 87.5%, a moderate Kappa of 60.2%, a Sensitivity of 85%, and a Specificity of 88.2%. The model was able to correctly predict who would purchase from the company at an approximate rate of 84%, and who would not purchase from the company at an approximate rate of 88%.
+
+![Decision Tree](https://github.com/JaclynGlosson/Predicting_Online_Sales/blob/235d37a50cdc5689bc80960a4b456c43e35c8377/readme_images/image3.png)
+
+![Decision Tree output](https://github.com/JaclynGlosson/Predicting_Online_Sales/blob/1342de8bc664d72ba88d864a2e798fdbe5ade18c/readme_images/image11.png)
